@@ -122,8 +122,10 @@ trans_probs <- best_inits %>%
   arrange(from_new, to_new)
 
 trans_probs %>% 
-  filter(str_detect(sequence_name, 'dfb')) %>% View()
+  filter(str_detect(sequence_name, 'dfa'))
 
+trans_probs %>% 
+  filter(str_detect(sequence_name, 'dfb'))
 
 ##############
 # Visualize the state predictions
