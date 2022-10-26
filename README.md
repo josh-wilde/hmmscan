@@ -51,7 +51,6 @@ Then, refer to the documentation files referenced above to execute HMMScan.
 This section provides references for the scripts and files that are used to generate the figures in the paper and supplementary material.
 All scripts are found in `hmmscan/scripts/viz`.
 
-# TODO: need to ensure that the raw data for Table 3 is available in Mendeley Data archive.
 #### Figures
 - Figure 2: `s2c1-sim-results.R`
 - Figure 3: `bic.R`
@@ -60,6 +59,5 @@ All scripts are found in `hmmscan/scripts/viz`.
 - Figure 6: `use_case_validation.R`
 
 #### Tables
-- Table 2: Probably not going to provide data, but need to check.
-- Table 3: Probably just going to reference a raw data file in the Mendeley Data.
+- Table 3: `summary_stats.R`
 - Table 4: `best_model_dists_and_predictions.R` and `ci.R`
