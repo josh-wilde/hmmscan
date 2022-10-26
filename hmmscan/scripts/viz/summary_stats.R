@@ -24,5 +24,5 @@ aes %>%
             max = max(aes_std),
             mean_std = mean(aes_std),
             n_lots = n(),
-            n_aes = sum(aes_std))
+            n_aes_standardized = sum(aes_std))
 
