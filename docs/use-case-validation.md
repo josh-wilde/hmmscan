@@ -1,5 +1,4 @@
 # Use Case Validation Documentation
-
 This file contains instructions for creating the Use Case Validation results.
 
 ## Required Inputs
@@ -65,7 +64,7 @@ Run these three commands:
 3. `python -m hmmscan.scripts.validation.evaluate-samples --validation_type ci --init_file_path scans/use_case/best_initializations/by_date_ex_iqr.csv --generating_sequence_name dfc_by_date_ex_iqr_outliers --generating_ae_type serious_std --generating_n_states 2 --generating_n_mix_comps 3 --sample_index_min 0 --sample_index_max 99`
 
 ## 5. Visualize the results
-It is probably easiest to generate the necessary plots locally off Engaging. To do so, copy `ae-project/validation/use_case/fits/all_fits.csv` to your local version of `ae-project`.
+It is probably easiest to generate the necessary plots on a local laptop using RStudio, rather than using Engaging. To do so, copy `ae-project/validation/use_case/fits/all_fits.csv` to your local version of `ae-project`.
 
 Then, you can use the script `use_case_validation.R` in the `hmmscan/scipts/viz` directory to look at the model validation results.
 

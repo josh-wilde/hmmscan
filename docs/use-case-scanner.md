@@ -14,7 +14,7 @@ The instructions can be used either to replicate the use case in the paper resul
 Ensure that the file `ae-project/data/use_case/[sequence_name].csv` has been created. If providing your own sequence, not replicating the paper results, then see the [User-Provided Input Data](new-use-case-data.md) for details.
 
 ### Paper Result Replication
-Ensure that the Mendeley Data repository has been downloaded locally (see the repo readme file [here](../README.md) for instructions).
+Ensure that the [`ae-project` repository](https://doi.org/10.17632/zzd5vbj7yn.1) has been downloaded locally (see the repo readme file [here](../README.md) for instructions).
 If this repository is downloaded, then the necessary input data files will already be available. 
 
 ## 2. Run the scanner on Engaging cluster

@@ -1,5 +1,4 @@
 # Simulation Validation Documentation
-
 This file contains instructions for creating the Model Validation results.
 
 ## Required Inputs

@@ -20,8 +20,8 @@ All file paths in this section are relative to the top level of this directory.
 **Warning**: this last step may take a long time, but you only need to run it once.
 
 ### Download data
-1. Download the Mendeley Data repository locally. # TODO: need to put the link to the repository in here 
-2. Create `shared-path.txt` (in the top-level of this directory) that contains only the absolute local path of the Mendeley Data repository (e.g., `/Users/username/ae-project`). Do not include a new line character after the path.
+1. Download the [`ae-project` repository](https://doi.org/10.17632/zzd5vbj7yn.1) locally.
+2. Create `shared-path.txt` (in the top-level of this directory) that contains only the absolute local path of the `ae-project` repository (e.g., `/Users/username/ae-project`). Do not include a new line character after the path.
 
 ## Replicating Paper Results
 
@@ -29,7 +29,7 @@ The Mendeley Data directory contains intermediate numerical results required to 
 To replicate the paper figures only, please refer to the Paper Figures section below.
 
 To recreate the intermediate results starting from the raw input data, follow the steps in the associated readme files referenced below.
-The file paths referenced below assumes the Mendeley Data directory is downloaded to a directory called `ae-project`.
+The file paths referenced below assumes the `ae-project` directory is downloaded to a directory called `ae-project`.
 
 ### Use Case HMMScan: BIC results, State Prediction
 Refer to [Use Case Scanner Documentation](docs/use-case-scanner.md).
