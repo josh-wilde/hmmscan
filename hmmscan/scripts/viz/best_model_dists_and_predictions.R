@@ -70,6 +70,22 @@ state_dists %>%
        title = NULL # 'State-Specific Mixture Distributions' # 'Dose Form B'
   )
 
+state_dists %>% 
+  mutate(dose_form_label = ifelse(str_detect(sequence_name, 'dfa'), 'Dose Form A', 
+                                  ifelse(str_detect(sequence_name, 'dfb'), 'Dose Form B', 'Dose Form C'))) %>% 
+  filter(((dose_form_label == 'Dose Form A') & (x < 100)) 
+         | ((dose_form_label == 'Dose Form B') & (x < 50)) 
+         | ((dose_form_label == 'Dose Form C') & (x < 30)) ) %>% 
+  filter(dose_form_label == 'Dose Form C') %>% 
+  ggplot(aes(x = x, y = prob_binom, fill = factor(state))) + 
+  geom_area(alpha = 0.5, position = 'identity') +
+  theme_bw(base_size = 9) +  
+  labs(x = 'Reported AE rate per 100k doses',
+       y = 'Probability Mass',
+       fill = 'Hidden\nState',
+       title = NULL # 'State-Specific Mixture Distributions' # 'Dose Form B'
+  )
+
 ##############
 # View the parameters for the states and transition probabilities
 ##############
@@ -126,6 +142,9 @@ trans_probs %>%
 
 trans_probs %>% 
   filter(str_detect(sequence_name, 'dfb'))
+
+trans_probs %>% 
+  filter(str_detect(sequence_name, 'dfc'))
 
 ##############
 # Visualize the state predictions
